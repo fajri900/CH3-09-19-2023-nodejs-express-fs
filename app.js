@@ -231,7 +231,7 @@ const editUser = (req, res) => {
 }
 
 const deleteUser = (req, res) => {
-  const id = req.params.id
+  const id = req.params._id
 
   const userIndex = users.findIndex(
     (el) => el._id === id
